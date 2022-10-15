@@ -18,7 +18,24 @@ export default {
   data() {
     return {
       userMail: 'info@spedity.com',
-
+      contactPhone: '+39 06 56548263',
+      prevInfo: {
+        shippingId: 'ffc78c0b',
+        message: '',
+        content: 'Merce generica',
+        value: 300,
+        pallet: {
+          weight: 100,
+          height: 100,
+          length: 100,
+          width: 100,
+          quantity: 1
+        },
+        shippingDate: '14/10/2022',
+        expirDate: '24/10/2022',
+        expirTime: '0:00',
+        priority: 'Standard'
+      }
     }
   }
 }
@@ -38,7 +55,17 @@ export default {
   }
 
   .btn-primary {
-        background-color: $blue !important;
-        color: white;
+    background-color: $blue !important;
+    color: white;
+  }
+
+  .btn-secondary {
+    color: black !important;
+    background-color: $midgrey !important;
+    border: 0 !important;
+  }
+
+  .btn-secondary:focus {
+    background-color: $darkgrey !important;
   }
 </style>
