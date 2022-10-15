@@ -2,6 +2,7 @@
     <main>
         <div class="ms_container">
             <PreventiveInfo/>
+
             <ResponseComp/>
         </div>
     </main>
@@ -9,18 +10,20 @@
 
 <script>
 import PreventiveInfo from './PreventiveInfo.vue'
+import ResponseComp from './ResponseComp.vue'
 
 export default {
   name: 'MainComp',
   components: {
-    PreventiveInfo
+    PreventiveInfo,
+    ResponseComp
   },
   data() {
     return {
 
     }
   },
-  props: [],
+  props: ['userMail'],
 }
 </script>
 

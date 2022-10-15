@@ -50,15 +50,22 @@
                     </div>
 
                 </div>
-
+                
             </div>
         </nav>
+
+        <AlertComp :userMail="userMail"/>
     </header>
 </template>
 
 <script>
+import AlertComp from './AlertComp.vue'
+
 export default {
   name: 'HeaderComp',
+  components: {
+    AlertComp
+  },
   data() {
     return {
 
@@ -70,6 +77,10 @@ export default {
 
 <style lang="scss">
 @import '@/assets/styles/palette.scss';
+
+    header {
+        position: relative;
+    }
 
     .brand-logo {
         height: 50px;

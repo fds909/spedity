@@ -1,5 +1,5 @@
 <template>
-    <div id="preventive-info" class="border rounded">
+    <div id="preventive-info" class="border rounded my-2">
         <div class="container-fluid">
             <div class="row">
 
@@ -61,7 +61,7 @@
 
                 <div class="col-3">
                     <div class="info-text">
-                        <span class="label-green rounded rounded-pill">Scade il {{prevInfo.expirDate}} alle {{prevInfo.expirTime}}</span>
+                        <span class="label-green rounded rounded-pill fw-bold">Scade il {{prevInfo.expirDate}} alle {{prevInfo.expirTime}}</span>
                     </div>
                 </div>
 
@@ -157,12 +157,5 @@ export default {
     .info-text {
         display: flex;
         margin-bottom: 5px;
-    }
-
-    .label-green {
-        font-weight: bold;
-        color: white;
-        background-color: $green;
-        padding: 5px 10px;
     }
 </style>

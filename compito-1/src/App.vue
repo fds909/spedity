@@ -68,4 +68,10 @@ export default {
   .btn-active {
     outline: $blue solid 1px;
   }
+
+  .label-green {
+    color: white;
+    background-color: $green;
+    padding: 5px 10px;
+  }
 </style>
