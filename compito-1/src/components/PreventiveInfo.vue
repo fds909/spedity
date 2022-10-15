@@ -1,5 +1,5 @@
 <template>
-    <div id="preventive-info">
+    <div id="preventive-info" class="border rounded">
         <div class="container-fluid">
             <div class="row">
 
@@ -66,13 +66,14 @@
                 </div>
 
                 <div class="col">
-                    <!-- Detail -->
-                    <a class="btn btn-secondary" href="#" @click="showDetail">Dettaglio &#9660;</a>
+                    <!-- Detail button -->
+                    <a :class="(showDetail)?'btn btn-secondary btn-active':'btn btn-secondary'"
+                        href="#" @click="toggleDetail">Dettaglio &#9660;</a>
                 </div>
             </div>
         </div>
 
-        <DetailComp/>
+        <DetailComp v-show="showDetail" :detail="prevInfo"/>
     </div>
 </template>
 
@@ -111,11 +112,20 @@ export default {
                 province: 'RM'
             },
             expirDate: '24/10/2022',
-            expirTime: '0:00'
-        }
+            expirTime: '0:00',
+            vehicleEquip: 'Sponda Idraulica  Alza/Abbassa',
+            extraServ: ''
+        },
+
+        showDetail: false,
     }
   },
   props: [],
+  methods: {
+    toggleDetail() {
+        this.showDetail = !this.showDetail;
+    }
+  }
 }
 </script>
 

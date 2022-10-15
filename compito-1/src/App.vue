@@ -65,7 +65,7 @@ export default {
     border: 0 !important;
   }
 
-  .btn-secondary:focus {
-    background-color: $darkgrey !important;
+  .btn-active {
+    outline: $blue solid 1px;
   }
 </style>
