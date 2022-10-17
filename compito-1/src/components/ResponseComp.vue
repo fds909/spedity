@@ -1,14 +1,16 @@
 <template>
     <div id="response" class="border rounded my-2 py-3 d-flex flex-column align-items-center">
       <p class="mb-5">Appena riceverai i preventivi te li mostreremo qui. Inoltre li riceverai via email.</p>
-      <TimerComp class="mb-3"/>
+
+      <TimerComp :mins="60" class="mb-3"/>
+
       <p class="text-center">Abbiamo inviato la tua richiesta ai nostri trasportatori <br/>
         La maggior parte delle offerte viene inviata entro 60 minuti nei giorni lavorativi</p>
 
       <p class="text-center"> In caso di dubbi chiamaci al 
         <span class="label-green rounded-pill py-2">
           <img class="headphone-icon mx-1" src="@/assets/icons/headset.svg" alt="Headset Icon">
-          <span>+39 06 56548263</span>
+          <span>{{contactPhone}}</span>
         </span>
       </p>
     </div>
@@ -27,7 +29,7 @@ export default {
 
     }
   },
-  props: [],
+  props: ['contactPhone'],
 }
 </script>
 
@@ -35,7 +37,7 @@ export default {
 @import '@/assets/styles/palette.scss';
 
     #response {
-        font-size: 14px;
+      font-size: 13px;
     }
 
     .headphone-icon {

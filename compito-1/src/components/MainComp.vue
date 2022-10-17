@@ -1,9 +1,9 @@
 <template>
     <main>
         <div class="ms_container">
-            <PreventiveInfo/>
+            <PreventiveInfo :prevInfo="prevInfo"/>
 
-            <ResponseComp/>
+            <ResponseComp :contactPhone="contactPhone"/>
         </div>
     </main>
 </template>
@@ -23,7 +23,7 @@ export default {
 
     }
   },
-  props: ['userMail'],
+  props: ['contactPhone', 'prevInfo'],
 }
 </script>
 

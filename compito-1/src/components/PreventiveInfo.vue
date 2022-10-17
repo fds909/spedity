@@ -87,40 +87,10 @@ export default {
   },
   data() {
     return {
-        prevInfo: {
-            shippingId: 'ffc78c0b',
-            priority: 'Standard',
-            message: '',
-            content: 'Merce generica',
-            value: 300,
-            pallet: {
-                weight: 100,
-                height: 100,
-                length: 100,
-                width: 100,
-                quantity: 1
-            },
-            shippingDate: '14/10/2022',
-            departurePlace: {
-                city: 'Sora',
-                cap: '03039',
-                province: 'FR'
-            },
-            deliveryPlace: {
-                city: 'Vivaro Romano',
-                cap: '00020',
-                province: 'RM'
-            },
-            expirDate: '24/10/2022',
-            expirTime: '0:00',
-            vehicleEquip: 'Sponda Idraulica  Alza/Abbassa',
-            extraServ: ''
-        },
-
         showDetail: false,
     }
   },
-  props: [],
+  props: ['prevInfo'],
   methods: {
     toggleDetail() {
         this.showDetail = !this.showDetail;
