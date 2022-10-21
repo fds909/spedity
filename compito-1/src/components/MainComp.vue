@@ -35,7 +35,7 @@ main {
 }
 
 .ms_container {
-    width: 90%;
+    width: 75%;
     margin: auto;
 }
 

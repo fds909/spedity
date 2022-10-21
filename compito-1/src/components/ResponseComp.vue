@@ -1,5 +1,5 @@
 <template>
-    <div id="response" class="border rounded my-2 py-3 d-flex flex-column align-items-center">
+    <div id="response" class="border rounded my-2 p-3 d-flex flex-column align-items-center">
       <p class="mb-5">Appena riceverai i preventivi te li mostreremo qui. Inoltre li riceverai via email.</p>
 
       <TimerComp :mins="60" class="mb-3"/>
@@ -37,12 +37,18 @@ export default {
 @import '@/assets/styles/palette.scss';
 
     #response {
-      font-size: 13px;
+      font-size: 18px;
     }
 
     .headphone-icon {
       height: 20px;
       width: 20px;
       filter: invert(100%);
+    }
+
+    @media screen and (max-width:619px) {
+      .label-green {
+        display: block;
+      }
     }
 </style>

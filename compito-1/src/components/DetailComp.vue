@@ -1,15 +1,15 @@
 <template>
-    <div id="detail" class="border rounded">
+    <div id="detail" class="border rounded text-white my-4">
         <!-- Heading -->
-        <div class="row">
+        <div class="row mb-4">
             <div class="col">
                 <h5>Dettagli della tua richiesta</h5>
             </div>
         </div>
 
-        <div class="row">
+        <div class="row row-cols-lg-3 row-cols-sm-1">
             <!-- Col left -->
-            <div class="col">
+            <div class="col mb-4">
                 <!-- ID -->
                 <div class="detail-text mb-3">
                     <strong>Id spedizione: </strong> {{detail.shippingId}}
@@ -34,7 +34,7 @@
             </div>
 
             <!-- Col Center -->
-            <div class="col">
+            <div class="col mb-4">
                 <!-- Pallet -->
                 <div class="detail-text mb-3">
                     <strong>Pallet: </strong> {{detail.pallet.weight}}Kg {{detail.pallet.length}}x{{detail.pallet.height}}x{{detail.pallet.width}}cm Qta:{{detail.pallet.quantity}}
@@ -47,7 +47,7 @@
             </div>
 
             <!-- Col right -->
-            <div class="col">
+            <div class="col mb-4">
                 <div class="detail-text">
                     <strong>Servizi aggiuntivi richiesti</strong>
                     <div class="text-grey" v-if="detail.extraServ === ''">Nessuno</div>
@@ -74,21 +74,13 @@ export default {
 @import '@/assets/styles/palette.scss';
 
     #detail {
-        background-color: white;
-        padding: 10px;
-    }
-
-    h5 {
-        font-size: 14px;
-        font-weight: bold;
+        font-size: 16px;
+        padding: 20px;
+        background-color: $darkergrey;
     }
 
     .text-grey {
         color: $darkgrey;
-    }
-
-    strong {
-        font-size: 13px;
     }
 
 </style>

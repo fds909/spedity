@@ -71,7 +71,8 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 400px;
+    width: 25vw;
+    min-width: 245px;
     color: white;
   }
 
@@ -80,9 +81,9 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100px;
-    width: 100px;
-    background-color: $blue;
+    height: 80px;
+    width: 80px;
+    background-color: black;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 3px 3px 5px #cacaca;

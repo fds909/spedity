@@ -63,7 +63,7 @@ export default {
   }
 
   #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 14px;
   }
 
