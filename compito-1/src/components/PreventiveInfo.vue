@@ -4,7 +4,7 @@
             <div class="row mb-3 justify-content-center">
                 
                 <div class="col-lg-6 col-md-8 col-sm-12 d-flex align-items-center justify-content-between">
-                    <div class="d-flex flex-column align-items-center">
+                    <div class="location d-flex flex-column align-items-center">
                         <div class="circle mb-2">
                             <img src="@/assets/icons/location.svg" alt="Location Partenza">
                         </div>
@@ -13,7 +13,9 @@
 
                     </div>
 
-                    <div class="d-flex flex-column align-items-center">
+                    <div class="line"></div>
+
+                    <div class="location d-flex flex-column align-items-center">
                         <div class="circle mb-2">
                             <img src="@/assets/icons/flag.svg" alt="Flag Destinazione">
                         </div>
@@ -111,6 +113,10 @@ export default {
         font-size: 16px;
     }
 
+    .location {
+        width: 150px;
+    }
+
     .circle {
         background-color: rgb(49, 49, 49);
         width: 60px;
@@ -123,8 +129,11 @@ export default {
 
     .line {
         height: 4px;
-        width: 30vw;
-        background-color: rgb(77, 77, 77);
+        width: 20vw;
+        background-color: #313131;
+        border-radius: 5px;
+        position: relative;
+        bottom: 30px
     }
 
     .circle img {
